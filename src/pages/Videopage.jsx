@@ -34,8 +34,57 @@ const VideoPage = () => {
   
 };
   return (
-    <div ref={myMeeting}>
-
+    <div
+      style={{
+        minHeight: '100vh',
+        background: '#18181b',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        color: '#f4f4f5',
+        fontFamily: 'Inter, Segoe UI, Arial, sans-serif',
+      }}
+    >
+      {/* The video call UI will be rendered here */}
+      <h2 style={{ marginBottom: 24, fontWeight: 600, letterSpacing: 1 }}>Video Call Room</h2>
+      <div
+        ref={myMeeting}
+        style={{
+          width: '100%',
+          maxWidth: 800,
+          minHeight: 480,
+          background: '#232326',
+          borderRadius: 16,
+          boxShadow: '0 4px 32px rgba(0,0,0,0.25)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          padding: 24,
+          position: 'relative',
+          overflow: 'hidden',
+        }}
+      >
+        {/* ZegoUIKitPrebuilt will mount here */}
+        <span
+          style={{
+            position: 'absolute',
+            top: 16,
+            right: 24,
+            background: '#323236',
+            color: '#f4f4f5',
+            padding: '4px 12px',
+            borderRadius: 8,
+            fontSize: 14,
+            fontWeight: 500,
+            letterSpacing: 0.5,
+            zIndex: 2,
+            boxShadow: '0 2px 8px rgba(0,0,0,0.10)',
+          }}
+        >
+          Room ID: {roomID}
+        </span>
+      </div>
     </div>
   )
 }

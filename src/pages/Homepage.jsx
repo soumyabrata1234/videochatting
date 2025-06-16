@@ -33,7 +33,7 @@ export default function LoginForm() {
   return (
     <div className="min-h-screen bg-zinc-900 text-zinc-100 flex items-center justify-center p-4">
       <div className="w-full max-w-md p-8 rounded-2xl shadow-xl bg-zinc-800">
-        <h2 className="text-3xl font-bold mb-6 text-center">Sign In</h2>
+        <h2 className="text-3xl font-bold mb-6 text-center">create your hangout spot</h2>
         <form onSubmit={handleSubmit} className="space-y-5">
           {/* <div>
             <label className="block mb-1 text-sm font-medium text-zinc-300">
@@ -51,9 +51,7 @@ export default function LoginForm() {
           </div> */}
 
           <div>
-            <label className="block mb-1 text-sm font-medium text-zinc-300">
-              Name
-            </label>
+           
             <input
               name="name"
               type="text"
@@ -84,7 +82,7 @@ export default function LoginForm() {
             type="submit"
             className="w-full py-3 bg-indigo-600 hover:bg-indigo-700 transition-colors rounded-xl font-semibold text-white"
           >
-            Log In
+            CREATE
           </button>
         </form>
       </div>

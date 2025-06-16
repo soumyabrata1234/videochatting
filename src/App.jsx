@@ -2,7 +2,7 @@ import React from 'react'
 import Videopage from './pages/Videopage'
 import Homepage from './pages/Homepage'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import './App.css'
+
 const App = () => {
   const router = (
     <Router>
